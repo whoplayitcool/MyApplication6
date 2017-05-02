@@ -1,0 +1,643 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <Button
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="30dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/shape_button1"
+            android:id="@+id/login"
+            android:text="登 录"
+            android:textColor="#fff"
+            android:textSize="12sp" />
+        <cn.bxw1.bxapp.widget.DropZoomScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="210dp"
+                    android:background="@drawable/bg2" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:orientation="vertical">
+
+
+
+
+                    <RelativeLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_margin="5dp"
+                            android:text="我的订单"
+                            android:textColor="#000" />
+
+                        <Button
+                            android:id="@+id/ib_right_order_my_fragment"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/right_arrow1" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_margin="5dp"
+                            android:layout_toLeftOf="@id/ib_right_order_my_fragment"
+                            android:text="查看全部订单"
+                            android:textColor="@color/color_gray"
+                            android:textSize="12sp" />
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dip"
+                        android:background="@color/light_gray" />
+
+                    <RadioGroup
+                        android:id="@+id/rg_my_fragment"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/rb_mycart"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_weight="1"
+                            android:button="@null"
+                            android:drawableTop="@drawable/my_cart"
+                            android:gravity="center_horizontal"
+                            android:textColor="@color/black"
+                            android:text="购物篮" />
+
+                        <RadioButton
+                            android:id="@+id/rb_mycollection"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:button="@null"
+                            android:textColor="@color/black"
+                            android:drawableTop="@drawable/my_collection"
+                            android:gravity="center_horizontal"
+                            android:text="收藏" />
+
+                        <RadioButton
+                            android:id="@+id/rb_myhistory"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:button="@null"
+                            android:textColor="@color/black"
+                            android:drawableTop="@drawable/my_history"
+                            android:gravity="center_horizontal"
+                            android:text="浏览记录" />
+
+                        <RadioButton
+                            android:id="@+id/rb_myaddr"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="20dp"
+                            android:layout_weight="1"
+                            android:button="@null"
+                            android:textColor="@color/black"
+                            android:drawableTop="@drawable/my_addr"
+                            android:gravity="center_horizontal"
+                            android:text="管理地址" />
+
+                    </RadioGroup>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:baselineAligned="false">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="1dip"
+                            android:background="@color/light_gray" />
+
+
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_weight="3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <RelativeLayout
+
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+
+                                <Button
+                                    android:id="@+id/ib_rightgroup_my_fragment"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true"
+                                    android:layout_margin="5dp"
+                                    android:background="@drawable/right_arrow1" />
+
+                                <ImageView
+                                    android:id="@+id/iv_group_my_fragment"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_margin="5dp"
+
+                                    android:src="@drawable/my_group" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_margin="5dp"
+                                    android:layout_toRightOf="@+id/iv_group_my_fragment"
+                                    android:text="我的团"
+                                    android:textColor="#000" />
+
+
+                            </RelativeLayout>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="1dip"
+                                android:layout_marginLeft="8dp"
+                                android:background="@color/light_gray"
+                                android:foregroundGravity="bottom" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <RelativeLayout
+
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+
+                                <Button
+                                    android:id="@+id/ib_rightpassword_my_fragment"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true"
+                                    android:layout_margin="5dp"
+                                    android:background="@drawable/right_arrow1" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_margin="5dp"
+
+                                    android:layout_toLeftOf="@+id/ib_rightpassword_my_fragment"
+                                    android:text="分享送红包" />
+
+                                <ImageView
+                                    android:id="@+id/iv_password_my_fragment"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_margin="5dp"
+
+                                    android:src="@drawable/my_code" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_margin="5dp"
+                                    android:layout_toRightOf="@+id/iv_password_my_fragment"
+                                    android:text="我的密码"
+                                    android:textColor="#000" />
+
+
+                            </RelativeLayout>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="1dip"
+                                android:layout_marginLeft="8dp"
+                                android:background="@color/light_gray"
+                                android:foregroundGravity="bottom" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <RelativeLayout
+
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+
+                                <Button
+                                    android:id="@+id/ib_rightred_my_fragment"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true"
+                                    android:layout_margin="5dp"
+                                    android:background="@drawable/right_arrow1" />
+
+                                <ImageView
+                                    android:id="@+id/iv_rightred_my_fragment"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_margin="5dp"
+
+                                    android:src="@drawable/my_bonus" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_margin="5dp"
+                                    android:layout_toRightOf="@+id/iv_rightred_my_fragment"
+                                    android:text="红包"
+                                    android:textColor="#000" />
+
+
+                            </RelativeLayout>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="1dip"
+                                android:layout_marginLeft="8dp"
+                                android:background="@color/light_gray"
+                                android:foregroundGravity="bottom" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <RelativeLayout
+
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+
+                                <Button
+                                    android:id="@+id/btn_my_coupon"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true"
+                                    android:layout_margin="5dp"
+                                    android:background="@drawable/right_arrow1" />
+
+                                <ImageView
+                                    android:id="@+id/iv_my_coupon"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_margin="5dp"
+
+                                    android:src="@drawable/my_coupon" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_margin="5dp"
+                                    android:layout_toRightOf="@+id/iv_my_coupon"
+                                    android:text="优惠券"
+                                    android:textColor="#000" />
+
+
+                            </RelativeLayout>
+
+
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="2dip"
+                            android:background="@color/light_gray" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <RelativeLayout
+
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+
+                                <Button
+                                    android:id="@+id/ib_qa_my_fragment"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true"
+                                    android:layout_margin="5dp"
+                                    android:background="@drawable/right_arrow1" />
+
+                                <ImageView
+                                    android:id="@+id/iv_qa_my_fragment"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_margin="5dp"
+
+                                    android:src="@drawable/qa" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_margin="5dp"
+                                    android:layout_toRightOf="@+id/iv_qa_my_fragment"
+                                    android:text="买前须知"
+                                    android:textColor="#000" />
+
+
+                            </RelativeLayout>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="1dip"
+                                android:layout_marginLeft="8dp"
+                                android:background="@color/light_gray"
+                                android:foregroundGravity="bottom" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <RelativeLayout
+
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+
+                                <Button
+                                    android:id="@+id/ib_feedback_my_fragment"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true"
+                                    android:layout_margin="5dp"
+                                    android:background="@drawable/right_arrow1" />
+
+
+                                <ImageView
+                                    android:id="@+id/iv_feedback_my_fragment"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_margin="5dp"
+
+                                    android:src="@drawable/feedback" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_margin="5dp"
+                                    android:layout_toRightOf="@+id/iv_feedback_my_fragment"
+                                    android:text="意见反馈"
+                                    android:textColor="#000" />
+
+
+                            </RelativeLayout>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="1dip"
+                                android:layout_marginLeft="8dp"
+                                android:background="@color/light_gray"
+                                android:foregroundGravity="bottom" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <RelativeLayout
+
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+
+                                <Button
+                                    android:id="@+id/ib_my_about_my_fragment"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true"
+                                    android:layout_margin="5dp"
+                                    android:background="@drawable/right_arrow1" />
+
+                                <ImageView
+                                    android:id="@+id/iv_my_about_my_fragment"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_margin="5dp"
+
+                                    android:src="@drawable/my_about" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_margin="5dp"
+                                    android:layout_toRightOf="@+id/iv_my_about_my_fragment"
+                                    android:text="关于蜜惠"
+                                    android:textColor="#000" />
+
+
+                            </RelativeLayout>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="1dip"
+                                android:layout_marginLeft="8dp"
+                                android:background="@color/light_gray"
+                                android:foregroundGravity="bottom" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <RelativeLayout
+
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+
+                                <Button
+                                    android:id="@+id/btn_iv_my_hotline"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true"
+                                    android:layout_margin="5dp"
+                                    android:background="@drawable/right_arrow1" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_margin="5dp"
+                                    android:layout_toLeftOf="@+id/btn_iv_my_hotline"
+                                    android:text="400-826-1633" />
+
+
+                                <ImageView
+                                    android:id="@+id/iv_my_hotline"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_margin="5dp"
+
+                                    android:src="@drawable/my_hotline" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_margin="5dp"
+                                    android:layout_toRightOf="@+id/iv_my_hotline"
+                                    android:text="客服支持"
+                                    android:textColor="#000" />
+
+
+                            </RelativeLayout>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="1dip"
+
+                                android:background="@color/light_gray"
+                                android:foregroundGravity="bottom" />
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:background="#eee"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:text="客服工作时间9点-22点（平日）9点-18点（周末与节假日）"
+                            android:layout_width="wrap_content"
+                            android:textSize="10sp"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:text="大宗购买及供应链合作请洽："
+                            android:layout_width="wrap_content"
+                            android:textSize="10sp"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:text="BD@nysochina.com; 0571-28193656"
+                            android:layout_width="wrap_content"
+                            android:textSize="10sp"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </cn.bxw1.bxapp.widget.DropZoomScrollView>
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

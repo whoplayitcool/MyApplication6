@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical" >
+
+       <ImageView
+           android:layout_width="180dp"
+           android:layout_height="200dp"
+           android:layout_gravity="center"
+           android:background="@drawable/logo2"
+           android:layout_marginTop="50dp"
+           />
+    <EditText
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:drawableLeft="@drawable/user"
+        android:textColor="@color/black"
+
+        android:id="@+id/email_edittext"
+
+        android:layout_width="250dp"
+
+        android:layout_height="wrap_content"
+
+
+
+        android:hint="用户名"
+        android:textColorHint="@color/color_gray"
+
+        android:inputType="textEmailAddress" />
+
+
+
+    <EditText
+        android:layout_gravity="center_horizontal"
+        android:drawableLeft="@drawable/pass"
+        android:textColor="@color/black"
+
+        android:id="@+id/password_edittext"
+
+        android:layout_width="250dp"
+
+        android:layout_height="wrap_content"
+
+        android:layout_marginBottom="5dp"
+        android:textColorHint="@color/color_gray"
+
+        android:hint="密码"
+
+        android:inputType="textPassword" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_margin="3dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+        <TextView
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="50dp"
+            android:text="密码找回"/>
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="60dp"
+            android:text="用户注册"/>
+
+    </LinearLayout>
+    <Button
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="230dp"
+        android:layout_height="40dp"
+        android:id="@+id/login"
+        android:text="登 录"
+        android:textColor="@color/bx_green"
+        android:textSize="18sp"
+        android:background="@drawable/buttonshap"/>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        >
+
+        <LinearLayout
+            android:clickable="true"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="80dp"
+            android:layout_width="50dp"
+            android:layout_height="80dp"
+            android:orientation="vertical"
+            android:id="@+id/vlogin"
+            ><ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/vlogin"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/bx_green"
+                android:textSize="10sp"
+                android:gravity="center"
+                android:layout_marginTop="3dp"
+                android:text="声纹登录"/>
+        </LinearLayout>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+        <LinearLayout
+            android:clickable="true"
+            android:id="@+id/flogin"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="80dp"
+            android:layout_width="50dp"
+            android:layout_height="80dp"
+            android:orientation="vertical"
+            ><ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/flogin"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/bx_green"
+                android:textSize="10sp"
+                android:gravity="center"
+                android:layout_marginTop="3dp"
+                android:text="刷脸登录"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</LinearLayout>
