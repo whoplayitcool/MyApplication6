@@ -14,6 +14,7 @@ import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
+import cn.bxw1.bxapp.login.RegActivity;
 import cn.bxw1.bxapp.myapplication.R;
 
 
@@ -33,6 +34,7 @@ public class LoginActivity extends cn.bxw1.bxapp.base.BaseActivity implements On
     private String result = null;
     private String password = null;
     private Button login = null;
+    private TextView tv_reg=null;
 
 
     @Override
@@ -42,6 +44,8 @@ public class LoginActivity extends cn.bxw1.bxapp.base.BaseActivity implements On
         findViewById(R.id.login).setOnClickListener(LoginActivity.this);
         findViewById(R.id.vlogin).setOnClickListener(LoginActivity.this);
         findViewById(R.id.flogin).setOnClickListener(LoginActivity.this);
+        tv_reg = (TextView)findViewById(R.id.tv_reg);
+        tv_reg.setOnClickListener(LoginActivity.this);
 
 
         Log.i(TAG, "ALoginActivity.class :: onCreate()");
@@ -126,6 +130,10 @@ public class LoginActivity extends cn.bxw1.bxapp.base.BaseActivity implements On
             case R.id.login:
 //                startActivity(new Intent(LoginActivity.this, OnlineFaceDemo.class));
                 break;
+            case R.id.tv_reg:
+                startActivity(new Intent(LoginActivity.this, RegActivity.class));
+                break;
+
 
 
                 }
